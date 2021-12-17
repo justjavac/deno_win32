@@ -1,7 +1,7 @@
 # deno_win32
 
-Wraps some of the most common **Win32** API calls using FFI to make them accessible
-to Deno.
+Wraps some of the most common **Win32** API calls using FFI to make them
+accessible to Deno.
 
 ## Usage
 
