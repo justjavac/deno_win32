@@ -16,7 +16,7 @@ flags:
 ## Examples
 
 ```bash
-deno run --allow-ffi --unstable https://cdn.jsdelivr.net/gh/justjavac/deno_win32/examples/MessageBox.ts
+deno run --allow-ffi --unstable https://deno.land/x/win32/examples/MessageBox.ts
 ```
 
 You will see:
