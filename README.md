@@ -21,7 +21,7 @@ deno run --allow-ffi --unstable https://deno.land/x/win32/examples/MessageBox.ts
 
 You will see:
 
-![](./img\screen_messagebox.png)
+![](./img/screen_messagebox.png)
 
 ### License
 
