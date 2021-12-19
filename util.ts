@@ -21,3 +21,12 @@ export function cstr2ptrW(cstr: string) {
   }
   return Deno.UnsafePointer.of(u16);
 }
+
+export function ptr2cstrW(cstr: string) {
+  const buffer = new ArrayBuffer((cstr.length + 1) * 2);
+  const u16 = new Uint16Array(buffer);
+  for (let i = 0; i <= cstr.length; i++) {
+    u16[i] = cstr.charCodeAt(i);
+  }
+  return Deno.UnsafePointer.of(u16);
+}
