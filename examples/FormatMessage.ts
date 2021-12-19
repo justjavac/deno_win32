@@ -1,6 +1,5 @@
 import * as win32 from "../mod.ts";
 
-
 const windowID = win32.CreateWindow(
   0,
   "hello xxx",
@@ -20,7 +19,7 @@ console.log("CreateWindow: %d", windowID);
 
 const dwMessageId = win32.GetLastError();
 
-console.log("GetLastError: %d", dwMessageId)
+console.log("GetLastError: %d", dwMessageId);
 
 const lpMsgBuf = new Uint8Array(100);
 

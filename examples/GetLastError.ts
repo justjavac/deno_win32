@@ -1,3 +1,5 @@
 import * as win32 from "../mod.ts";
 
-const dw = win32.GetLastError();
+const lastError = win32.GetLastError();
+
+console.log("GetLastError: %d", lastError);
