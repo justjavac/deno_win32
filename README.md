@@ -10,7 +10,7 @@ Win32 APIs using Deno FFI.
 
 flags:
 
-- `--allow-ffi`: Requires ffi access to "user32.dll"
+- `--allow-ffi`: Requires ffi access to "user32.dll", "kernel32", etc...
 - `--unstable`: FFI is unstable feature
 
 ## Examples
