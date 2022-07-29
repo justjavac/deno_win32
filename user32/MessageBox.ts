@@ -27,7 +27,7 @@ import { dll } from "./dll.ts";
  *          If the function fails, the return value is zero. To get extended error information, call [GetLastError]().
  */
 export function MessageBox(
-  hWnd: Deno.UnsafePointer,
+  hWnd: bigint | null,
   lpText: string,
   lpCaption: string,
   uType: number,
