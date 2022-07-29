@@ -9,10 +9,10 @@ const windowID = win32.CreateWindow(
   0,
   500,
   500,
-  new Deno.UnsafePointer(0n),
-  new Deno.UnsafePointer(0n),
-  new Deno.UnsafePointer(0n),
-  new Deno.UnsafePointer(0n),
+  null,
+  null,
+  null,
+  null,
 );
 
 console.log(windowID);
