@@ -16,7 +16,7 @@ jobs:
         run: deno fmt --check
 
       - name: Check
-        run: deno check --remote mod.ts
+        run: deno check --unstable --remote mod.ts
 
       - name: Lint
         run: deno lint
