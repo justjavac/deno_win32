@@ -17,13 +17,13 @@ import { dll } from "./dll.ts";
  */
 export function FormatMessage(
   dwFlags: number,
-  lpSource: Deno.UnsafePointer,
+  lpSource: bigint | null,
   dwMessageId: number,
   dwLanguageId: number,
-  lpBuffer: Deno.UnsafePointer,
+  lpBuffer: bigint | null,
   nSize: number,
-  Arguments: Deno.UnsafePointer,
-): number {
+  Arguments: bigint | null,
+): bigint {
   return dll.symbols.FormatMessageW(
     dwFlags,
     lpSource,
@@ -32,5 +32,5 @@ export function FormatMessage(
     lpBuffer,
     nSize,
     Arguments,
-  ) as number;
+  );
 }

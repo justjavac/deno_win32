@@ -9,6 +9,6 @@ import { dll } from "./dll.ts";
  *
  * @returns The return value is the calling thread's last-error code.
  */
-export function GetLastError(): number {
-  return dll.symbols.GetLastError() as number;
+export function GetLastError(): bigint {
+  return dll.symbols.GetLastError();
 }

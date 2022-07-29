@@ -10,11 +10,11 @@ export function CreateWindow(
   y: number,
   nWidth: number,
   nHeight: number,
-  hWndParent: Deno.UnsafePointer,
-  hMenu: Deno.UnsafePointer,
-  hInstance: Deno.UnsafePointer,
-  lpParam: Deno.UnsafePointer,
-): Deno.UnsafePointer {
+  hWndParent: bigint | null,
+  hMenu: bigint | null,
+  hInstance: bigint | null,
+  lpParam: bigint | null,
+): bigint | null {
   return dll.symbols.CreateWindowExW(
     dwExStyle,
     cstr2ptrW(lpClassName),
@@ -28,5 +28,5 @@ export function CreateWindow(
     hMenu,
     hInstance,
     lpParam,
-  ) as Deno.UnsafePointer;
+  );
 }
